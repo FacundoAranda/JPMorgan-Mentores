@@ -164,7 +164,7 @@ const rebanadaPizza = () => {
         if (i % 2 == 0) {
             rebanadas[i] = {
                 'text': `${mentores[i]}`,
-                'fillStyle': '#0072af',
+                'fillStyle': 'rgb(31, 40, 141)',
                 'textFontSize': 14,
                 'textFillStyle': 'rgba(255, 255, 255)',
                 'strokeStyle': 'rgba(255, 255, 255)'
@@ -175,7 +175,7 @@ const rebanadaPizza = () => {
                 'text': `${mentores[i]}`,
                 'fillStyle': 'rgba(255, 255, 255)',
                 'textFontSize': 14,
-                'textFillStyle': '#0072af',
+                'textFillStyle': 'rgb(31, 40, 141)',
                 'strokeStyle': 'rgba(255, 255, 255)'
             }
         }
@@ -188,7 +188,7 @@ const rebanadaPizza2 = () => {
         if (i % 2 == 0) {
             rebanadas[i] = {
                 'text': `${mentores2[i]}`,
-                'fillStyle': '#0072af',
+                'fillStyle': 'rgb(31, 40, 141)',
                 'textFontSize': 14,
                 'textFillStyle': 'rgba(255, 255, 255)',
                 'strokeStyle': 'rgba(255, 255, 255)'
@@ -199,7 +199,7 @@ const rebanadaPizza2 = () => {
                 'text': `${mentores2[i]}`,
                 'fillStyle': 'rgba(255, 255, 255)',
                 'textFontSize': 14,
-                'textFillStyle': '#0072af',
+                'textFillStyle': 'rgb(31, 40, 141)',
                 'strokeStyle': 'rgba(255, 255, 255)'
             }
         }
@@ -248,7 +248,7 @@ let nuevaRuleta = new Winwheel(
 // Dibujas el indicador
 const dibujarIndicador = () => {
     var ctx = miRuleta.ctx;
-    // ctx.strokeStyle = 'navy';
+    ctx.strokeStyle = '#fd7302';
     ctx.fillStyle = '#fd7302';
     ctx.lineWidth = 2;
     ctx.beginPath();
@@ -261,7 +261,7 @@ const dibujarIndicador = () => {
 }
 const dibujarIndicador2 = () => {
     var ctx = nuevaRuleta.ctx;
-    // ctx.strokeStyle = 'navy';
+    ctx.strokeStyle = '#fd7302';
     ctx.fillStyle = '#fd7302';
     ctx.lineWidth = 2;
     ctx.beginPath();
