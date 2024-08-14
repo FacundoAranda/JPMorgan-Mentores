@@ -11,6 +11,7 @@
 {
     display: flex;
     justify-content: center;
+    /* padding-bottom: 10vh; */
 }
 .ruletas
 {
@@ -18,11 +19,14 @@
     justify-content: center;
     margin-top: 12.5vh;
     height: 82vh;
+    /* background: rgb(255,255,255);
+    background: linear-gradient(95deg, rgba(255,255,255,1) 0%, rgba(158,165,175,1) 60%); */
 }
 .btn
 {
-    background-color: rgba(255, 177, 113);
-    border: 2px rgba(84, 41, 15) solid;
+    background-color: #fd7302;
+    color: white;
+    box-shadow: 0 5px 10px #000;
 }
 .btn:focus
 {

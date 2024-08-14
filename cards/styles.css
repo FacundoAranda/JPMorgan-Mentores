@@ -10,8 +10,12 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #F2EFE4;
+    /* background-color: rgb(233, 229, 229); */
+    /* background: #F2EFE4; */
     /* background: #fffced; */
+    /* /* background: rgb(255,255,255); */
+    /* background: linear-gradient(95deg, rgba(255,255,255,1) 0%, rgba(158,165,175,1) 60%); */
+    background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(158,165,175,1));
 }
 
 .card {
@@ -43,22 +47,32 @@ body {
     object-fit: cover;
 }
 
-.card .front h3 {
+.card .front .question h3 {
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    bottom: 0;   
     height: 45px;
     line-height: 45px;
-    color: #fff;
-    background: rgba(0, 0, 0, .4);
+    color: black;
+    /* background: rgba(0, 0, 0, .4); */
     text-align: center;
+    border-top: 1px solid black;
+    width: 14vw;
 }
+.card .question
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 
 .card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: #54290f;
+    background-image: url('./White_Fade.png');
+    background-size: cover;
     padding: 15px;
-    color: #f3f3f3;
+    font-size: 1.8rem;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -67,13 +81,13 @@ body {
 }
 
 .card .back .link { 
-    border-top: solid 1px #f3f3f3;
+    border-top: solid 1px black;
     height: 50px;
     line-height: 50px;
 }
 
 .card .back .link a {
-    color: #f3f3f3;
+    color: black;
 }
 .test
 {

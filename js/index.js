@@ -164,17 +164,19 @@ const rebanadaPizza = () => {
         if (i % 2 == 0) {
             rebanadas[i] = {
                 'text': `${mentores[i]}`,
-                'fillStyle': 'rgba(255, 177, 113)',
+                'fillStyle': '#0072af',
                 'textFontSize': 14,
-                'textFillStyle': 'rgba(84, 41, 15)',
+                'textFillStyle': 'rgba(255, 255, 255)',
+                'strokeStyle': 'rgba(255, 255, 255)'
             }
         }
         else {
             rebanadas[i] = {
                 'text': `${mentores[i]}`,
-                'fillStyle': 'rgba(84, 41, 15)',
+                'fillStyle': 'rgba(255, 255, 255)',
                 'textFontSize': 14,
-                'textFillStyle': 'rgba(255, 177, 113)'
+                'textFillStyle': '#0072af',
+                'strokeStyle': 'rgba(255, 255, 255)'
             }
         }
     }
@@ -186,23 +188,34 @@ const rebanadaPizza2 = () => {
         if (i % 2 == 0) {
             rebanadas[i] = {
                 'text': `${mentores2[i]}`,
-                'fillStyle': 'rgba(255, 177, 113)',
+                'fillStyle': '#0072af',
                 'textFontSize': 14,
-                'textFillStyle': 'rgba(84, 41, 15)',
+                'textFillStyle': 'rgba(255, 255, 255)',
+                'strokeStyle': 'rgba(255, 255, 255)'
             }
         }
         else {
             rebanadas[i] = {
                 'text': `${mentores2[i]}`,
-                'fillStyle': 'rgba(84, 41, 15)',
+                'fillStyle': 'rgba(255, 255, 255)',
                 'textFontSize': 14,
-                'textFillStyle': 'rgba(255, 177, 113)'
+                'textFillStyle': '#0072af',
+                'strokeStyle': 'rgba(255, 255, 255)'
             }
         }
     }
     return rebanadas;
 }
+//chillones
+//#fd7302 
+// #0072af 
 
+// blue rgb(71, 143, 191)
+// R:71 G:143 B:191
+// orange rgb(237, 134, 0)
+// R:237 G:134 B:0
+// core blue rgb(0, 71, 123)
+// R:0 G:71 B:123
 
 // creas toda la pizza
 let miRuleta = new Winwheel({
@@ -235,8 +248,8 @@ let nuevaRuleta = new Winwheel(
 // Dibujas el indicador
 const dibujarIndicador = () => {
     var ctx = miRuleta.ctx;
-    ctx.strokeStyle = 'navy';
-    ctx.fillStyle = 'black';
+    // ctx.strokeStyle = 'navy';
+    ctx.fillStyle = '#fd7302';
     ctx.lineWidth = 2;
     ctx.beginPath();
     ctx.moveTo(300, 0);
@@ -248,8 +261,8 @@ const dibujarIndicador = () => {
 }
 const dibujarIndicador2 = () => {
     var ctx = nuevaRuleta.ctx;
-    ctx.strokeStyle = 'navy';
-    ctx.fillStyle = 'black';
+    // ctx.strokeStyle = 'navy';
+    ctx.fillStyle = '#fd7302';
     ctx.lineWidth = 2;
     ctx.beginPath();
     ctx.moveTo(300, 0);

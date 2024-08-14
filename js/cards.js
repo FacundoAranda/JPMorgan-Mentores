@@ -10,11 +10,13 @@ questions.forEach(question => {
     i++
     let card = `<div class="card col-md-1">
                 <div class="face front">
-                    <img src="/cards/J.P. Morgan.png" alt="">
-                    <h3>Pregunta ${i}</h3>
+                    <img src="/cards/Jp_Card_White.png" alt="">
+                    <div class="question">
+                        <h3>Pregunta ${i}</h3>
+                    </div>                    
                 </div>
-                <div class="face back">
-                    <h3>Pregunta ${i}</h3>
+                <div class="face back">                
+                    <h3>Pregunta ${i}</h3>                                     
                     <p>${question}</p>
                     <div class="link">
                         <a href="">Fundacion Pescar</a>
