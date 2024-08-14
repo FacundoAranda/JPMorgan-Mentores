@@ -10,7 +10,8 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #fffced;
+    background: #F2EFE4;
+    /* background: #fffced; */
 }
 
 .card {
@@ -74,6 +75,10 @@ body {
 .card .back .link a {
     color: #f3f3f3;
 }
+.test
+{
+    color: rgb(136, 90, 61);
+}
 
 .card .back .h3 {
     font-size: 30px;
@@ -85,14 +90,14 @@ body {
     letter-spacing: 1px;
 }
 
-.card:hover .front {
+/* .card:hover .front {
     transform: perspective(600px) rotateY(180deg);
     cursor: pointer;
-}
-.card:hover .back {
+} */
+/* .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
     cursor: pointer;
-} 
+}  */
 /*body{
     background: rgb(63,94,251);
     background: radial-gradient(cicle, );
