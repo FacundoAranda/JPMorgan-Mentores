@@ -13,10 +13,15 @@
     justify-content: center;
     /* padding-bottom: 10vh; */
 }
-.ruletas
+.other-card-container
 {
     display: flex;
     justify-content: center;
+}
+.ruletas
+{
+    display: flex;
+    justify-content: space-around;
     margin-top: 12.5vh;
     height: 82vh;
     /* background: rgb(255,255,255);

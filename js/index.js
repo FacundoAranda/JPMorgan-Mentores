@@ -221,7 +221,7 @@ const rebanadaPizza2 = () => {
 let miRuleta = new Winwheel({
 
     'numSegments': numeroPreguntas,
-    'outerRadius': 270,
+    'outerRadius': 300,
     'segments': rebanadaPizza(),
     'animation': {
         'type': 'spinToStop',
@@ -234,7 +234,7 @@ let nuevaRuleta = new Winwheel(
     {
         'canvasId': 'canvas2',
         'numSegments': numeroPreguntas + 2,
-        'outerRadius': 270,
+        'outerRadius': 300,
         'segments': rebanadaPizza2(),
         'animation': {
             'type': 'spinToStop',
