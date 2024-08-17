@@ -1,48 +1,7 @@
 
 
 let numeroPreguntas = 20;
-let num = [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28,
-    29,
-    30,
-    31,
-    32,
-    33,
-    34,
-    35,
-    36,
-    37,
-    38,
-    39,
-    40,
-]
+
 let mentores = [
     "Alan Nahuel, P.",
     "Alejandro Rodrigo, D.",
@@ -219,6 +178,7 @@ const rebanadaPizza2 = () => {
 
 // creas toda la pizza
 let miRuleta = new Winwheel({
+    
 
     'numSegments': numeroPreguntas,
     'outerRadius': 300,
@@ -227,8 +187,10 @@ let miRuleta = new Winwheel({
         'type': 'spinToStop',
         'duration': 6,
         'callbackFinished': 'Mensaje()',
-        'callbackAfter': 'dibujarIndicador()'
+        'callbackAfter': 'dibujarIndicador(),dibujarCentro()'
+
     }
+    
 });
 let nuevaRuleta = new Winwheel(
     {
@@ -240,7 +202,7 @@ let nuevaRuleta = new Winwheel(
             'type': 'spinToStop',
             'duration': 6,
             'callbackFinished': 'Mensaje2()',
-            'callbackAfter': 'dibujarIndicador2()'
+            'callbackAfter': 'dibujarIndicador2(),dibujarCentro2()'
         }
     })
 
@@ -273,6 +235,58 @@ const dibujarIndicador2 = () => {
     ctx.fill();
 }
 
+const dibujarCentro =() =>{
+    
+    
+    const miRuleta = document.getElementById('canvas');
+    const ctx = miRuleta.getContext ('2d');
+
+    // defino los centros de la ruleta
+    const centerX = miRuleta.width / 2;
+    const centerY = miRuleta.height / 2;
+
+    
+    const img = document.getElementById('miImagen');
+    const imgWidth = 100; // Ajusta el tamaño de la imagen
+    const imgHeight = 100;
+
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, 50, 0, 2 * Math.PI);
+    ctx.clip();
+    ctx.drawImage(img, centerX - imgWidth / 2, centerY - imgHeight / 2, imgWidth, imgHeight);
+    
+    ctx.restore();
+    // }
+}
+const dibujarCentro2 =() =>{
+    
+    
+    const nuevaRuleta = document.getElementById('canvas2');
+    const ctx = nuevaRuleta.getContext ('2d');
+
+    // defino los centros de la ruleta
+    const centerX = nuevaRuleta.width / 2;
+    const centerY = nuevaRuleta.height / 2;
+    const img = document.getElementById('miImagen');
+    const imgWidth = 100; // Ajusta el tamaño de la imagen
+    const imgHeight = 100;
+
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, 50, 0, 2 * Math.PI);
+    ctx.clip();
+    ctx.drawImage(img, centerX - imgWidth / 2, centerY - imgHeight / 2, imgWidth, imgHeight);
+    
+    ctx.restore();
+    
+}
+
+
+dibujarCentro();
+dibujarCentro2();
+
+    
 
 dibujarIndicador();
 dibujarIndicador2();
@@ -286,6 +300,7 @@ const Mensaje = () => {
     miRuleta.rotationAngle = 0;
     // miRuleta.draw();
     dibujarIndicador();
+    
 }
 const Mensaje2 = () => {
     var SegmentoSeleccionado = nuevaRuleta.getIndicatedSegment();
