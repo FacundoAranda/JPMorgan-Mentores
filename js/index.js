@@ -269,7 +269,7 @@ const dibujarCentro2 =() =>{
     const centerX = nuevaRuleta.width / 2;
     const centerY = nuevaRuleta.height / 2;
     const img = document.getElementById('miImagen');
-    const imgWidth = 100; // Ajusta el tamaño de la imagen
+    const imgWidth = 100; 
     const imgHeight = 100;
 
     ctx.save();
