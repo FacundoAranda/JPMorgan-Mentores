@@ -273,7 +273,6 @@ dibujarCentro2();
 dibujarIndicador();
 dibujarIndicador2();
 
-
 // Crea el cuadro de la pregunta
 const Mensaje = () => {
     var SegmentoSeleccionado = miRuleta.getIndicatedSegment();
