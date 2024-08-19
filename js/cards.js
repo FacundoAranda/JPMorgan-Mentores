@@ -14,7 +14,7 @@ questions.forEach(question => {
     i++
     let card = `<div class="card col-md-1">
                 <div class="face front">
-                    <img src="/cards/Jp_Card_White.png" alt="">
+                    <img src="./cards/Jp_Card_White.png" alt="">
                     <div class="question">
                         <h3>Pregunta ${i}</h3>
                     </div>                    
@@ -37,7 +37,7 @@ questions2.forEach(question =>
         i++
         let card = `<div class="card col-md-1">
                 <div class="face front">
-                    <img src="/cards/Jp_Card_White.png" alt="">
+                    <img src="./cards/Jp_Card_White.png" alt="">
                     <div class="question">
                         <h3>Pregunta ${i}</h3>
                     </div>                    

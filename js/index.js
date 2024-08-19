@@ -165,16 +165,6 @@ const rebanadaPizza2 = () => {
     }
     return rebanadas;
 }
-//chillones
-//#fd7302 
-// #0072af 
-
-// blue rgb(71, 143, 191)
-// R:71 G:143 B:191
-// orange rgb(237, 134, 0)
-// R:237 G:134 B:0
-// core blue rgb(0, 71, 123)
-// R:0 G:71 B:123
 
 // creas toda la pizza
 let miRuleta = new Winwheel({
@@ -237,17 +227,14 @@ const dibujarIndicador2 = () => {
 
 const dibujarCentro =() =>{
     
-    
     const miRuleta = document.getElementById('canvas');
     const ctx = miRuleta.getContext ('2d');
 
     // defino los centros de la ruleta
     const centerX = miRuleta.width / 2;
     const centerY = miRuleta.height / 2;
-
-    
     const img = document.getElementById('miImagen');
-    const imgWidth = 100; // Ajusta el tamaño de la imagen
+    const imgWidth = 100; 
     const imgHeight = 100;
 
     ctx.save();
@@ -255,9 +242,8 @@ const dibujarCentro =() =>{
     ctx.arc(centerX, centerY, 50, 0, 2 * Math.PI);
     ctx.clip();
     ctx.drawImage(img, centerX - imgWidth / 2, centerY - imgHeight / 2, imgWidth, imgHeight);
-    
     ctx.restore();
-    // }
+    
 }
 const dibujarCentro2 =() =>{
     
@@ -277,17 +263,13 @@ const dibujarCentro2 =() =>{
     ctx.arc(centerX, centerY, 50, 0, 2 * Math.PI);
     ctx.clip();
     ctx.drawImage(img, centerX - imgWidth / 2, centerY - imgHeight / 2, imgWidth, imgHeight);
-    
     ctx.restore();
     
 }
 
-
+//dibujar centro e indicadores
 dibujarCentro();
 dibujarCentro2();
-
-    
-
 dibujarIndicador();
 dibujarIndicador2();
 
@@ -298,7 +280,6 @@ const Mensaje = () => {
     $(`#${mentoresConNumeros[SegmentoSeleccionado.text]}`).modal({ backdrop: 'static' });
     miRuleta.stopAnimation(false);
     miRuleta.rotationAngle = 0;
-    // miRuleta.draw();
     dibujarIndicador();
     
 }
@@ -308,15 +289,11 @@ const Mensaje2 = () => {
     $(`#${mentoresConNumeros2[SegmentoSeleccionado.text]}`).modal({ backdrop: 'static' });
     nuevaRuleta.stopAnimation(false);
     nuevaRuleta.rotationAngle = 0;
-    // nuevaRuleta.draw();
     dibujarIndicador();
 }
 
 
 
-// let preguntaTexto = document.createElement('div');
-
-// const pregunta = new Pregunta();
 for (i = 0; i < numeroPreguntas; i++) {
     let preguntaTexto = document.createElement('div');
     preguntaTexto.innerHTML = "";
