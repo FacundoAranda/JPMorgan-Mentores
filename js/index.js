@@ -46,7 +46,7 @@ let mentores2 = [
     "Jose Gabriel, L. ",
     "Jose Maria Fernando, F. M.",
     "Victoria Abril, B.",
-    "Segui participando!!!!!",
+    "Volve a girar!!",
 ]
 let mentoresConNumeros = {};
 for (let i = 0; i < 20; i++) {
