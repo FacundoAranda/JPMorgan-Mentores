@@ -1,6 +1,6 @@
-let questions = ["¿Qué te motivo a dar mentorías a chicos de la fundación?",
+let questions = ["¿Qué te motivo a dar mentorías a chicos de la fundación pescar?",
     "¿Qué consejos y recomendaciones le darías a alguien que está buscando trabajo en tecnología basado en tu propia experiencia?", 
-    "¿Te habría gustado conocer Pescar antes de tu inicio laboral? ¿En que te habría ayudado?",    
+    "¿Te habría gustado conocer Fundacion Pescar antes de tu inicio laboral? ¿En que te habría ayudado?",    
 ];
 
 let questions2 = [
